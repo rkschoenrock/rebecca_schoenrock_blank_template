@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Rebecca Schoenrock Blank Template</title>
+    <title><?php bloginfo('name'); ?></title>
     <?php wp_head(); ?>
 
     <link rel="stylesheet" type="text/css" href="
@@ -14,7 +14,7 @@
 
         <header class="row">
             <div class="twelve columns">
-                <h1>This is My Blog</h1>
-                <p>This is my text</p>
+                <h1><?php bloginfo('name'); ?></h1>
+                <h2><?php bloginfo('description'); ?></h2>
             </div>
         </header>
