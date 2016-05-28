@@ -1,0 +1,18 @@
+/*
+Theme Name: Rebecca Schoenrock Blank Theme
+Theme URI:
+Author: Rebecca Schoenrock
+Description: Blank theme for WIE course
+Version: 0.1
+License: Open
+Text Domain: rebecca_schoenrock_blank_template
+*/
+
+@import url("stylesheets/normalize.css");
+@import url("stylesheets/skeleton.css");
+
+*{
+    color: #000000;
+    font-size: 14px;
+    line-height: 1.5em;
+}
