@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Rebecca Schoenrock Blank Template</title>
+    <?php wp_head(); ?>
 
     <link rel="stylesheet" type="text/css" href="
         <?php bloginfo('stylesheet_url'); ?>
