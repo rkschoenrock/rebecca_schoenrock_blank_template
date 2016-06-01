@@ -1,8 +1,14 @@
 <footer class="row">
-    <div class="twelve columns">
-        <h3>This is the footer</h3>
-          <p>This is some cool footer content</p>
-    </div>
+    <div class="four columns">
+        <?php dynamic_sidebar('footer-one'); ?>
+</div>
+    <div class="four columns">
+        <?php dynamic_sidebar('footer-two'); ?>
+</div>
+    <div class="four columns">
+        <?php dynamic_sidebar('footer-three'); ?>
+</div>
+</footer>
 </footer>
 
 </div> <!-- End Container Div -->
