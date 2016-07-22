@@ -2,12 +2,12 @@
 /*-------------- Enable Widgets--------------- */
 
 function blank_widgets_init() {
-	/* Sidebar Widget */
+	/* Events Widget */
     register_sidebar( array(
-        'name' 			=> ('First Widget'),
-        'id' 			=> 'first-widget',
-        'description'   => 'Widget for our sidebar on pages',
-        'before_widget' => '<div class="widget-sidebar">',
+        'name' 			=> ('Events Widget'),
+        'id' 			=> 'events-widget',
+        'description'   => 'Widget for our events',
+        'before_widget' => '<div class="widget-events">',
         'after_widget'  => '</div>',
         'before_title'  => '<h2>',
         'after_title'   => '</h2>'
