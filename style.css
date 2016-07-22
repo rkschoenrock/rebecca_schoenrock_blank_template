@@ -1,15 +1,24 @@
 /*
-Theme Name: Rebecca Schoenrock Blank Theme
+Theme Name: Rebecca Schoenrock Client Theme
 Theme URI:
 Author: Rebecca Schoenrock
-Description: Blank theme for WIE course
+Description: Client theme for WIE course
 Version: 0.1
 License: Open
-Text Domain: rebecca_schoenrock_blank_template
+Text Domain: rebecca_schoenrock_client_template
 */
 
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
 @import url("stylesheets/normalize.css");
-@import url("stylesheets/skeleton.css");
+@font-face {
+    font-family: fox;
+    src: url(fonts/fox.ttf);
+}
 
 html, body {
     color: #000000;
@@ -19,52 +28,136 @@ html, body {
 
 h1, h2, h3, h4, h5, h6 {
     color: #999999;
-    font-weight: 700;
 }
 
 h1 {
+  font-family: fox;
   font-size: 3.0rem;
 }
 h2 {
-  font-size: 2.5rem;
+  font-family: 'Open Sans Condensed';
+  font-size: 1.5rem;
 }
 h3 {
+  font-family: 'Open Sans Condensed';
   font-size: 2.0rem;
 }
 h4 {
+  font-family: 'Open Sans Condensed';
   font-size: 1.5rem;
 }
 h5 {
+  font-family: 'Open Sans Condensed';
   font-size: 1.0rem;
 }
-
-a {
-  font-weight: 700;
-  text-decoration: none;
+p {
+  font-family: 'Open Sans Condensed';
+  font-size: 1.2rem;
 }
 
 /*--- Menu --- */
-
-.blank-menu-header {
-    text-align: left;
-    margin-top: 40px;
+nav {
+    background-color: #27749f;
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans Condensed';
+    padding: 20px;
 }
-.blank-menu-header ul {
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Open Sans Condensed';
+    text-transform: uppercase;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+nav ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
     list-style-image: none;
 }
-.blank-menu-header li {
+nav li {
     display: inline;
 }
-.blank-menu-header ul li a {
+nav ul li a {
     text-decoration:none;
     margin: 4px;
     padding: 5px 0px 5px 40px;
     font-weight: 300;
-    font-size: 1.1rem;
+    color: white;
 }
-.blank-menu-header ul li a:hover {
+nav ul li a:hover {
     color: #cccccc;
+}
+
+/*----Header (Logo + Searchbar)----*/
+header {
+    background-color: #405783;
+    color: white;
+}
+header img {
+    height: 70px;
+    padding: 20px;
+}
+/* SEARCH FORM */
+
+.wie-search-form .screen-reader-text {
+    position: absolute;
+    left: -999em;
+    width: 1em;
+    overflow: hidden;
+}
+
+.search-submit {
+    border: none;
+    padding: 10px;
+    margin-right: 20px;
+    margin-top: 34px;
+    float: right;
+    background-color: transparent;
+    color: white;
+}
+
+.search-bar-icon {
+    border: none;
+    color: #FFF;
+    font-size: 2.3em;
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+    display: inline;
+    float: right;
+
+}
+
+.search-bar-icon:hover {
+    color: #df7467;
+}
+
+input[type="search"] {
+    border: none;
+    font-size: 1.2rem;
+    padding: 10px;
+    margin-top: 37px;
+    border-radius: inherit;
+    background-color: #fff;
+    float: right;
+}
+
+
+
+/*-----Index: Welcome-----*/
+h1 {
+    text-align: center;
+    color: #405783;
+}
+h1 a {
+    color: #405783;
+}
+h2 {
+    text-align: center;
+    color: #405783;
+    font-weight: 400;
+    font-size: 2.0rem;
 }

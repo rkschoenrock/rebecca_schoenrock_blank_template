@@ -1,6 +1,20 @@
 
 <?php get_header(); ?>
 
+<div class="welcome">
+    <h1><a href="<?php $url = home_url('/'); echo $url; ?>"><?php bloginfo('name'); ?></a></h1>
+    <h2><?php bloginfo('description'); ?></h2>
+    <div class="social">
+        <a href=""><img src="images/.png"/></a>
+        <a href=""><img src="images/.png"/></a>
+        <a href=""><img src="images/.png"/></a>
+        <a href=""><img src="images/.png"/></a>
+        <a href=""><img src="images/.png"/></a>
+    </div>
+</div>
+
+
+
 <!-- Begin Section Container -->
     <section class="row">
         <div class="twelve columns">

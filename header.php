@@ -8,23 +8,19 @@
     <link rel="stylesheet" type="text/css" href="
         <?php bloginfo('stylesheet_url'); ?>
     " />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="container"> <!-- Begin Container Div -->
-
-        <header class="row">
-            <div class="twelve columns">
-                <h1><a href="<?php $url = home_url('/'); echo $url; ?>"><?php bloginfo('name'); ?></a></h1>
-                <h2><?php bloginfo('description'); ?></h2>
-            </div>
-        </header>
-        <div class="row">
-            <div class="twelve columns">
-                <?php
-                    wp_nav_menu(array(
-                        'sort_column' => 'menu_order',
-                        'container_class' => 'blank-menu-header'
-                    ));
-                ?>
-            </div>
-        </div>
+    <nav>
+        <?php
+            wp_nav_menu(array(
+                'sort_column' => 'menu_order',
+                'container_class' => 'blank-menu-header'
+            ));
+        ?>
+    </nav>
+    <header>
+        <div class="header-search"><?php get_search_form(); ?></div>
+        <a href="index.php"><img src="images/logo.png"/></a>
+    </header>
