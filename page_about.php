@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php
+/*
+Template Name: Staff Page
+*/
+get_header(); ?>
 
 
 <?php if (has_post_thumbnail( $post->ID ) ): ?>
@@ -17,13 +21,13 @@ $image = get_bloginfo( 'stylesheet_directory') . '/images/default_cat_img.jpg'; 
 
                     <h2><?php the_title(); ?></h2>
     </div>
-    <div class="pages">
-                    <?php the_content();
+    <div class="pages staffpage">
+            <?php the_content();
                 }
             } ?>
+            <div class="clearboth">&nbsp;</div>
             <!-- End Loop -->
     </div>
-
 
 
 <?php get_footer(); ?>

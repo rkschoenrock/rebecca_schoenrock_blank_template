@@ -15,7 +15,7 @@ $image = get_bloginfo( 'stylesheet_directory') . '/images/default_cat_img.jpg'; 
                     /* Our data context is defined */
                     the_post(); ?>
 
-                    <h2><?php the_title(); ?></h2>
+                    <h2>THANKSSSSS</h2>
     </div>
     <div class="pages">
                     <?php the_content();

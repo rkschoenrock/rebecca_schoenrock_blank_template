@@ -13,14 +13,23 @@
 </head>
 <body>
     <nav>
-        <?php
+        <!--?php
             wp_nav_menu(array(
                 'sort_column' => 'menu_order',
                 'container_class' => 'blank-menu-header'
             ));
-        ?>
+        ?-->
+        
+<?php
+  wp_nav_menu(array(
+    'menu' => 'Main Navigation',
+    'container_id' => 'cssmenu',
+    'walker' => new CSS_Menu_Walker()
+  ));
+?>
+
     </nav>
     <header>
         <div class="header-search"><?php get_search_form(); ?></div>
-        <a href="index.php"><img src="images/logo.png"/></a>
+        <a href="http://www.rebeccaschoenrock.com/viera/index.php"><img src="http://www.rebeccaschoenrock.com/viera/images/logo.png"/></a>
     </header>

@@ -14,7 +14,7 @@
 </div>
 <div class="white">
     <h3>Welcome</h3>
-    <p>Thank you for visiting Faith “Viera” Lutheran Church.</p>
+    <p>Thank you for visiting Faith 'Viera' Lutheran Church.</p>
     <p>At Faith Viera, we desire to glorify God through Christ centered worship, communion, and our mission is to serve God’s people.  Faith Viera is a place to learn, to   grow, and to be strengthened in your faith and walk with God.  Together, we seek to bring people to Christ, and Christ to people.  We would love for you to be a part of our faith journey.</p>
 </div>
 <div class="events">
